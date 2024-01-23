@@ -1,0 +1,12 @@
+{% extends "layout.html"%}
+
+{% block content %}
+<h1>Formulario</h1>
+<form class="form" action="/resultado" method="POST">
+  <label class="label">Numero 1</label>
+  <input class="input" type="text" name="numero1">
+  <label>Numero 2</label>
+  <input type="text" name="numero2">
+  <input type="submit" value="Multiplica">
+</form>
+{% endblock %}
