@@ -81,6 +81,7 @@ def multiplicacion():
         numero_2 = request.form.get("numero2")
         resultado = int(numero_1) * int(numero_2)
         return f"<h1>El resultado es: {resultado}</h1>"
+    return "Error"
 
 if __name__ == '__main__':
     app.run(debug=True)
