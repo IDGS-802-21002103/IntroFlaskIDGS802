@@ -1,4 +1,17 @@
 {% extends "layout.html"%}
+{% import '_macros.html' as macros %} // Add import statement for macros module
 {% block content %}
-<h1>Saludos desde alumnos</h1>
+<h1>ALUMNOS</h1>
+<form action="" method="POST">
+    {{ macros.input_form(form.nombre ,class="form-control") }}
+    {{ macros.input_form(form.apellido, class="form-control") }}
+    {{ macros.input_form(form.email, class="form-control") }}
+
+    <input type="submit" value="Enviar">
+</form>
+
+<h1>
+    Nombre: {{ nombre }}
+</h1>
+
 {% endblock %}
