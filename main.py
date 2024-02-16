@@ -26,7 +26,7 @@ def alumnos():
     apellido = ''
     email = ''
     
-    if request.method == "POST":
+    if request.method == "POST" and alumno_form.validate():
         nombre = alumno_form.nombre.data
         apellido = alumno_form.apellido.data
         email = alumno_form.email.data

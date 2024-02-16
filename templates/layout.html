@@ -4,34 +4,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio</title>
+  <title>Introduccion - L</title>
   <link rel="stylesheet" href="../static/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="../static/imagenes/py.png" type="image/x-icon">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
 </head>
 
 <body>
-  
+
   <div>
-    <nav class=" navbar navbar-expand-sm navbar-light bg-light">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
       <div class="container">
-        <a class="navbar-brand" href="#">IDGS-802</a>
-        <button 
-          class="navbar-toggler d-lg-none" 
-          type="button" 
-          data-bs-toggle="collapse" 
-          data-bs-target="#collapsibleNavId"
-          aria-controls="collapsibleNavId" 
-          aria-expanded="false" 
-          aria-label="Toggle navigation"
-        >
+        <a class="navbar-brand" href="/">IDGS-802</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
           <ul class="navbar-nav me-auto mt-2 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Usuarios</a>
+              <a class="nav-link" href="/usuarios">Usuarios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Alumnos</a>
+              <a class="nav-link" href="/alumnos">Alumnos</a>
             </li>
           </ul>
         </div>
@@ -42,6 +43,7 @@
   <div class="container-fluid">
 
     {% block content %}
+
     {% endblock %}
   </div>
 

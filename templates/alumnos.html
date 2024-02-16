@@ -2,10 +2,10 @@
 {% import '_macros.html' as macros %} // Add import statement for macros module
 {% block content %}
 <h1>ALUMNOS</h1>
-<form action="" method="POST">
-    {{ macros.input_form(form.nombre ,class="form-control") }}
-    {{ macros.input_form(form.apellido, class="form-control") }}
-    {{ macros.input_form(form.email, class="form-control") }}
+<form action="" method="POST" novalidate>
+    {{ macros.render_field(form.nombre ,class="form-control") }}
+    {{ macros.render_field(form.apellido, class="form-control") }}
+    {{ macros.render_field(form.email, class="form-control") }}
 
     <input type="submit" value="Enviar">
 </form>
