@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Introduccion - L2</title>
   <link rel="stylesheet" href="../static/bootstrap-5.3.2-dist/css/bootstrap.min.css">
-    <link rel="shortcut icon" href="../static/imagenes/py.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../static/imagenes/py.png" type="image/x-icon">
   <style>
     body {
       margin: 0;
@@ -20,7 +20,7 @@
 </head>
 
 <body>
-  <div>
+  <div class="mb-1">
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="/">IDGS-802</a>
@@ -43,6 +43,15 @@
     </nav>
   </div>
   <div class="container">
+    {% with messages = get_flashed_messages()  %}
+      {% if messages %}
+        {% for message in messages %}
+          <div class="alert alert-success">
+            {{ message }}
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
     {% block content %}
       
     {% endblock %}
